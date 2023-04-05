@@ -1,3 +1,10 @@
+# 1.0.0 (2023-04-05)
+
+
+### Features
+
+* ci ([#1](https://github.com/e2ateam/php_shared/issues/1)) ([d595962](https://github.com/e2ateam/php_shared/commit/d5959626102a9b62ae8ea8d2851b547e748a23bb))
+
 # [1.1.0](https://github.com/e2ateam/php_shared/compare/v1.0.0...v1.1.0) (2023-04-05)
 
 
