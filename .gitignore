@@ -1,0 +1,5 @@
+/.vscode
+/vendor
+/node_modules
+/target
+.phpunit.result.cache

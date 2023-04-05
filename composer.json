@@ -1,0 +1,43 @@
+{
+    "name": "e2ateam/php_shared",
+    "description": "Library with many common features",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "authors": [
+        {
+            "name": "Eliel Batiston",
+            "email": "batistondeoliveira@yahoo.com.br"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "E2ateam\\Shared\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "E2ateam\\Shared\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "lint": "./vendor/bin/pint",
+        "lint-dirty": "./vendor/bin/pint --dirty",
+        "test": "vendor/bin/phpunit --testdox",        
+        "coverage": "vendor/bin/phpunit --testdox --coverage-html=target/coverage/report/ && vendor/bin/phpunit --coverage-xml target/coverage/review && php phpunit-threshold.php target/coverage/review/index.xml 95",
+        "docker-up": "sudo systemctl start docker && docker-compose up -d && docker exec -it php_shared bash",
+        "docker-down": "docker-compose down"
+    },    
+    "require": {
+        "php": ">=8.1",
+        "nesbot/carbon": "^2.66"
+    },
+    "require-dev": {
+        "fakerphp/faker": "^1.9.1",
+        "mockery/mockery": "^1.4.4",
+        "phpunit/phpunit": "^10.0",
+        "phpunit/php-code-coverage": "^10.0",
+        "laravel/pint": "^1.7"
+    }
+}

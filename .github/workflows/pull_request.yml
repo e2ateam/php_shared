@@ -1,0 +1,32 @@
+name: Pull Request
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+on:
+  pull_request:    
+    types: [opened, synchronize, reopened]
+
+jobs:
+  pull-request:
+    name: Pull Request
+    runs-on: ubuntu-latest
+    steps:      
+      - name: Checkout the application
+        uses: actions/checkout@v3        
+
+      - name: Install composer for php
+        uses: php-actions/composer@v6
+
+      - name: Unit test        
+        uses: php-actions/phpunit@v3
+        with:
+          version: 10
+          php_version: 8.2
+          bootstrap: vendor/autoload.php
+          configuration: ./phpunit.xml
+          php_extensions: xdebug
+          coverage_xml: target/coverage/review
+          args: --coverage-xml=target/coverage/report/
+        env:
+          XDEBUG_MODE: coverage
