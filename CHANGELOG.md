@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/e2ateam/php_shared/compare/v1.1.0...v1.1.1) (2023-04-06)
+
+
+### Bug Fixes
+
+* fix tests imports ([#4](https://github.com/e2ateam/php_shared/issues/4)) ([d4f98bf](https://github.com/e2ateam/php_shared/commit/d4f98bfa22fb9990bee545fd5849b9d45e338814))
+
 # [1.1.0](https://github.com/e2ateam/php_shared/compare/v1.0.0...v1.1.0) (2023-04-06)
 
 
