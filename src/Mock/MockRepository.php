@@ -1,7 +1,10 @@
 <?php
 
-namespace E2ateam\Shared\Tests\Mock;
+namespace E2ateam\Shared\Mock;
 
+/**
+ * @codeCoverageIgnore
+ */
 class MockRepository
 {
     protected $observers = [];
