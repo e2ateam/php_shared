@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/e2ateam/php_shared/compare/v1.1.1...v1.1.2) (2023-04-06)
+
+
+### Bug Fixes
+
+* move MockRepository to src ([#6](https://github.com/e2ateam/php_shared/issues/6)) ([5870cd7](https://github.com/e2ateam/php_shared/commit/5870cd731483774a2ba56786145a195953766dea))
+
 ## [1.1.1](https://github.com/e2ateam/php_shared/compare/v1.1.0...v1.1.1) (2023-04-06)
 
 
