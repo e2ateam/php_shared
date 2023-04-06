@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Formatter;
+namespace E2ateam\Shared\Tests\Formatter;
 
 use DateTime;
 use PHPUnit\Framework\TestCase;

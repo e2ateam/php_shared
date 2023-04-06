@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Notification;
+namespace E2ateam\Shared\Tests\Notification;
 
 use PHPUnit\Framework\TestCase;
 use E2ateam\Shared\Notification\Notification;

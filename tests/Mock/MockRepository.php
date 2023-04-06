@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Mock;
+namespace E2ateam\Shared\Tests\Mock;
 
 class MockRepository
 {

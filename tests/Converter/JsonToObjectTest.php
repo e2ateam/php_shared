@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Converter;
+namespace E2ateam\Shared\Tests\Converter;
 
 use InvalidArgumentException;
 use PHPUnit\Framework\TestCase;

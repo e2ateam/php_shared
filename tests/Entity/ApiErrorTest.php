@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Entity;
+namespace E2ateam\Shared\Tests\Entity;
 
 use PHPUnit\Framework\TestCase;
 use E2ateam\Shared\Entity\ApiError;

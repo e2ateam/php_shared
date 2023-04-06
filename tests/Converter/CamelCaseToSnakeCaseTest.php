@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Converter;
+namespace E2ateam\Shared\Tests\Converter;
 
 use PHPUnit\Framework\TestCase;
 use E2ateam\Shared\Converter\CamelCaseToSnakeCase;

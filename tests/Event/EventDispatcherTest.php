@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Event;
+namespace E2ateam\Shared\Tests\Event;
 
 use PHPUnit\Framework\TestCase;
 use E2ateam\Shared\Event\Event;
