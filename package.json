@@ -1,5 +1,5 @@
 {
-    "name": "php_shared",    
+    "name": "php_shared",
     "description": "Package with several useful libraries for php projects",
     "author": "Eliel Batiston",
     "license": "ISC",
@@ -10,5 +10,6 @@
         "@semantic-release/changelog": "^6.0.3",
         "@semantic-release/git": "^10.0.1",
         "semantic-release": "^21.0.0"
-    }
+    },
+    "version": "1.1.0"
 }
