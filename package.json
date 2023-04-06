@@ -1,6 +1,5 @@
 {
-    "name": "php_shared",
-    "version": "1.0.0",
+    "name": "php_shared",    
     "description": "Package with several useful libraries for php projects",
     "author": "Eliel Batiston",
     "license": "ISC",

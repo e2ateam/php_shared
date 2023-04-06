@@ -15,6 +15,10 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
+      deployments: write
+      actions: write
+      checks: write
+      statuses: write
     steps:
 
       - name: Checkout
