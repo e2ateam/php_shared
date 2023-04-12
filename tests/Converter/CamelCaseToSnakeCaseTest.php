@@ -2,8 +2,8 @@
 
 namespace E2ateam\Shared\Tests\Converter;
 
-use PHPUnit\Framework\TestCase;
 use E2ateam\Shared\Converter\CamelCaseToSnakeCase;
+use PHPUnit\Framework\TestCase;
 
 class CamelCaseToSnakeCaseTest extends TestCase
 {

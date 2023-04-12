@@ -2,10 +2,10 @@
 
 namespace E2ateam\Shared\Tests\Event;
 
-use PHPUnit\Framework\TestCase;
 use E2ateam\Shared\Event\Event;
 use E2ateam\Shared\Event\EventDispatcher;
 use E2ateam\Shared\Event\EventHandlerInterface;
+use PHPUnit\Framework\TestCase;
 
 class EventDispatcherTest extends TestCase
 {

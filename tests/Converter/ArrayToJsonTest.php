@@ -2,9 +2,9 @@
 
 namespace E2ateam\Shared\Tests\Converter;
 
-use PHPUnit\Framework\TestCase;
 use E2ateam\Shared\Converter\ArrayToJson;
 use E2ateam\Shared\Factory\NotificationFactory;
+use PHPUnit\Framework\TestCase;
 
 class ArrayToJsonTest extends TestCase
 {

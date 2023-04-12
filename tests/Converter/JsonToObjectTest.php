@@ -2,11 +2,9 @@
 
 namespace E2ateam\Shared\Tests\Converter;
 
-use E2ateam\Shared\Constants\Constants;
 use E2ateam\Shared\Converter\JsonToObject;
 use E2ateam\Shared\Notification\Notification;
 use E2ateam\Shared\Notification\NotificationErrorProps;
-use InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
 
 class JsonToObjectTest extends TestCase
@@ -18,7 +16,7 @@ class JsonToObjectTest extends TestCase
             '{"errors": [{"context":"context 1","message":"message 1"}]}',
         );
         $this->assertNotEmpty($actual);
-        $this->assertEquals(1, count($actual->getErrors()));        
+        $this->assertEquals(1, count($actual->getErrors()));
         $this->assertEquals('context 1', $actual->getErrors()[0]['context']);
         $this->assertEquals('message 1', $actual->getErrors()[0]['message']);
 
@@ -46,5 +44,5 @@ class JsonToObjectTest extends TestCase
         $this->assertNotEmpty($actual);
         $this->assertEquals('context 1', $actual->getContext());
         $this->assertEquals('message 1', $actual->getMessage());
-    }    
+    }
 }

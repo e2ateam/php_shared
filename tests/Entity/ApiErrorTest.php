@@ -2,13 +2,13 @@
 
 namespace E2ateam\Shared\Tests\Entity;
 
-use PHPUnit\Framework\TestCase;
 use E2ateam\Shared\Entity\ApiError;
+use PHPUnit\Framework\TestCase;
 
 class ApiErrorTest extends TestCase
 {
     public function testCreateAnApiError(): void
-    {        
+    {
         $actual = new ApiError(
             '{"errors": [{"context":"user","message":"name: The name field is required."}]}',
             'uri/mock',

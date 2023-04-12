@@ -2,9 +2,9 @@
 
 namespace E2ateam\Shared\Tests\Notification;
 
-use PHPUnit\Framework\TestCase;
 use E2ateam\Shared\Notification\Notification;
 use E2ateam\Shared\Notification\NotificationErrorProps;
+use PHPUnit\Framework\TestCase;
 
 class NotificationTest extends TestCase
 {
