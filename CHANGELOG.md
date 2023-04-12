@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/e2ateam/php_shared/compare/v1.1.2...v1.1.3) (2023-04-12)
+
+
+### Bug Fixes
+
+* fix ApiError and JsonObject ([#8](https://github.com/e2ateam/php_shared/issues/8)) ([3472c5d](https://github.com/e2ateam/php_shared/commit/3472c5d0b896a2c3a872d4d042b1fac66b445680))
+
 ## [1.1.2](https://github.com/e2ateam/php_shared/compare/v1.1.1...v1.1.2) (2023-04-06)
 
 
