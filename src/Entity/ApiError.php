@@ -4,7 +4,7 @@ namespace E2ateam\Shared\Entity;
 
 use Carbon\Carbon;
 use E2ateam\Shared\Converter\JsonToObject;
-use E2ateam\Shared\Notification\NotificationErrorProps;
+use E2ateam\Shared\Notification\Notification;
 
 class ApiError
 {
@@ -18,9 +18,9 @@ class ApiError
     {
         $this->timestamp = Carbon::now();
         $this->message = JsonToObject::convert(
-            NotificationErrorProps::class,
+            Notification::class,
             $message
-        );
+        )->getErrors();
         $this->uri = $uri;
     }
 
