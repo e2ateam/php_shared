@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/e2ateam/php_shared/compare/v1.1.3...v1.2.0) (2023-04-12)
+
+
+### Features
+
+* change message property into HttpException ([#10](https://github.com/e2ateam/php_shared/issues/10)) ([bd973ac](https://github.com/e2ateam/php_shared/commit/bd973ac431d7261a18674329d88dcb219c261958))
+
 ## [1.1.3](https://github.com/e2ateam/php_shared/compare/v1.1.2...v1.1.3) (2023-04-12)
 
 
