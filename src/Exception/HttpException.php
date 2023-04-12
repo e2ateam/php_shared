@@ -2,9 +2,9 @@
 
 namespace E2ateam\Shared\Exception;
 
-use Illuminate\Http\Request;
 use E2ateam\Shared\Entity\ApiError;
 use E2ateam\Shared\Enum\HttpStatus;
+use Illuminate\Http\Request;
 
 /**
  * @codeCoverageIgnore

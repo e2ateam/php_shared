@@ -2,15 +2,15 @@
 
 namespace E2ateam\Shared\Tests\Entity;
 
-use PHPUnit\Framework\TestCase;
 use E2ateam\Shared\Entity\ApiError;
+use PHPUnit\Framework\TestCase;
 
 class ApiErrorTest extends TestCase
 {
     public function testCreateAnApiError(): void
     {
         $actual = new ApiError(
-            '[{"context":"user","message":"name: The name field is required."}]',
+            '{"errors": [{"context":"user","message":"name: The name field is required."}]}',
             'uri/mock',
         );
         $this->assertNotEmpty($actual);
@@ -18,10 +18,10 @@ class ApiErrorTest extends TestCase
         $messages = $actual->getMessage();
         $this->assertNotEmpty($messages);
         $this->assertEquals(1, count($messages));
-        $this->assertEquals('user', $messages[0]->getContext());
+        $this->assertEquals('user', $messages[0]['context']);
         $this->assertEquals(
             'name: The name field is required.',
-            $messages[0]->getMessage()
+            $messages[0]['message'],
         );
         $this->assertEquals('uri/mock', $actual->getUri());
     }
@@ -29,7 +29,7 @@ class ApiErrorTest extends TestCase
     public function testCreateAnApiErrorAndSerializeObject(): void
     {
         $error = new ApiError(
-            '[{"context":"user","message":"name: The name field is required."}]',
+            '{"errors": [{"context":"user","message":"name: The name field is required."}]}',
             'uri/mock',
         );
         $actual = $error->serialize();
@@ -39,10 +39,10 @@ class ApiErrorTest extends TestCase
         $messages = $actual['message'];
         $this->assertNotEmpty($messages);
         $this->assertEquals(1, count($messages));
-        $this->assertEquals('user', $messages[0]->getContext());
+        $this->assertEquals('user', $messages[0]['context']);
         $this->assertEquals(
             'name: The name field is required.',
-            $messages[0]->getMessage()
+            $messages[0]['message'],
         );
         $this->assertEquals('uri/mock', $actual['uri']);
     }

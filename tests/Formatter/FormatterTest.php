@@ -3,8 +3,8 @@
 namespace E2ateam\Shared\Tests\Formatter;
 
 use DateTime;
-use PHPUnit\Framework\TestCase;
 use E2ateam\Shared\Formatter\Formatter;
+use PHPUnit\Framework\TestCase;
 
 class FormatterTest extends TestCase
 {
