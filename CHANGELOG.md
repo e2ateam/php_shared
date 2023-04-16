@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/e2ateam/php_shared/compare/v1.2.0...v1.2.1) (2023-04-16)
+
+
+### Bug Fixes
+
+* fix phpunit-threshold.php ([#11](https://github.com/e2ateam/php_shared/issues/11)) ([5339f23](https://github.com/e2ateam/php_shared/commit/5339f2393e6ed4dc4a1b23653d1e70d8affc8032))
+
 # [1.2.0](https://github.com/e2ateam/php_shared/compare/v1.1.3...v1.2.0) (2023-04-12)
 
 
