@@ -19,7 +19,7 @@ class HttpException extends HttpStatusCodeException
     public function render(Request $request)
     {
         $err = new ApiError(
-            '{"errors": ' . $this->getMessage() . '}',
+            '{"errors": '.$this->getMessage().'}',
             $request->getUri(),
         );
 
